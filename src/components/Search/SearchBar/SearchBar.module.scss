@@ -1,0 +1,64 @@
+@import "../../../common.scss";
+
+.search_bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  &.focused {
+    .search_input {
+      border-color: $alt-color;
+    }
+
+    .search_button {
+      background: $alt-color;
+    }
+  }
+
+  &.found {
+    .search_input {
+      border-radius: 4px 0 0 0;
+    }
+
+    .search_button {
+      border-radius: 0 4px 0 0;
+    }
+  }
+}
+
+.search_input,
+.search_button {
+  font-family: inherit;
+  font-size: 16px;
+  padding: 4px 6px;
+}
+
+.search_input {
+  display: block;
+  flex-grow: 1;
+  border: 2px solid $primary-color;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  transition: .2s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search_button {
+    cursor: pointer;
+    color: $light-text;
+    border: 2px solid transparent;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    transition: .2s;
+    background: $primary-color;
+
+    &:hover {
+        filter: brightness(1.2);
+    }
+
+    &:active {
+        filter: brightness(1);
+        box-shadow: inset 0 2px 2px 1px rgba(0,0,0,.2);
+    }
+}

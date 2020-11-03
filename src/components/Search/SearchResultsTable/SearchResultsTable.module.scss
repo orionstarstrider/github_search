@@ -1,0 +1,42 @@
+@import "../../../common.scss";
+
+.searchResultsTable {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+
+    .head {
+        text-align: left;
+        border-bottom: 3px solid $primary-color;
+
+        & > .cell {
+            padding: 16px 12px;
+
+            &.sortable {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .cell {
+        padding: 12px;
+    }
+
+    .row {
+        &:only-child,
+        &:nth-child(2n) {
+            background: $table-background;
+        }
+    }
+}
+
+.wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.sortArrow {
+    display: inline-block;
+    width: 1em;
+    margin-left: .2em;
+}

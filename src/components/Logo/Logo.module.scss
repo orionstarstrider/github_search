@@ -1,0 +1,32 @@
+@import "../../common.scss";
+
+@font-face {
+    font-family: 'VT323';
+    src: url('../../fonts/VT323-Regular.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+
+.logo {
+    font-family: 'VT323';
+    font-size: 32px;
+    font-weight: 600;
+    height: 1em;
+    margin-bottom: 2px;
+    line-height: 1em;
+    vertical-align: middle;
+    text-shadow: 2px 1px 1px rgba(255,0,0,.8);
+
+    .suffix {
+        color: $alt-color;
+    }
+
+    a {
+        text-decoration: none;
+        color: #FFF;
+
+        &:visited {
+            color: #FFF;
+        }
+    }
+}

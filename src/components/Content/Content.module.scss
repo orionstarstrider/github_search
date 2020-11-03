@@ -1,0 +1,11 @@
+@import "../../common.scss";
+
+.content {
+    padding: 15px;
+}
+
+@include md {
+    .content {
+        padding: 30px;
+    }
+}

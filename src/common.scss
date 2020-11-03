@@ -1,0 +1,47 @@
+$screen-xs: 411px;
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1280px;
+$screen-xl: 1440px;
+
+$duration: .12s;
+
+$primary-color: #0D0D0D;
+$primary-color-dark: #000;
+$alt-color: #ff6c00;
+$error-color: #d81414;
+$base-text: #0D0D0D;
+$light-text: #F3F5F7;
+$background-color: #F3F5F7;
+$page-background: #FFF;
+$table-background: #ebebeb;
+
+@mixin xs {
+    @media (min-width: $screen-xs) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: $screen-sm) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: $screen-md) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: $screen-lg) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: $screen-xl) {
+        @content;
+    }
+}

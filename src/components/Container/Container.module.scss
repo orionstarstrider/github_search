@@ -1,0 +1,9 @@
+@import "../../common.scss";
+
+.container {
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: $page-background;
+}
